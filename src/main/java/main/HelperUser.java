@@ -1,6 +1,7 @@
 package main;
 
 import moodels.User;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,4 +41,10 @@ public class HelperUser extends HelperBase{
         click(By.xpath("//button[text()='Sign Out']"));
 
     }
+
+    public void submitRegistration() {
+        click(By.xpath("//button[@name='registration']"));
+    }
+
+
 }

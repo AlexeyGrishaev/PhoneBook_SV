@@ -35,8 +35,8 @@ public class RegistrationTests extends TestBase{
 //        Random random = new Random();
 //        int i = random.nextInt(1000)+1000;
         int z = (int) (System.currentTimeMillis()/1000)%3600;
+        User user =   User.builder().email("locker"+z+"@gmail.com").password("Qwerty1234!").build();
 
-        User user = new User().setEmail("locker"+z+"@gmail.com").setPassword("Qwerty1234!");
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitRegistration();
@@ -50,8 +50,8 @@ public class RegistrationTests extends TestBase{
 //        Random random = new Random();
 //        int i = random.nextInt(1000)+1000;
         int z = (int) (System.currentTimeMillis()/1000)%3600;
+        User user =   User.builder().email("locker"+z+"gmail.com").password("Qwerty123").build();
 
-        User user = new User().setEmail("locker"+z+"gmail.com").setPassword("Qwerty1234!");
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitRegistration();
@@ -66,7 +66,7 @@ public class RegistrationTests extends TestBase{
 //        int i = random.nextInt(1000)+1000;
         int z = (int) (System.currentTimeMillis()/1000)%3600;
 
-        User user = new User().setEmail("locker"+z+"@gmail.com").setPassword("Qwerty123");
+        User user =   User.builder().email("locker"+z+"@gmail.com").password("Qwerty123").build();
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitRegistration();

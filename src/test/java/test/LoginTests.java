@@ -10,6 +10,7 @@ public class LoginTests extends TestBase{
     public void preCondition(){
         if(app.getHelperUser().isLogged()){
             app.getHelperUser().logout();
+            logger.info("Before method finish logout");
         }
 
 
@@ -19,44 +20,75 @@ public class LoginTests extends TestBase{
 
     @Test
     public void loginSuccess(){
+       // logger.info("Start loginSuccess");
+        logger.info("Test data --> email:'locker@gmail.com password:''Qwerty1234!'");
+        User user = User.builder()
+                .email("locker@gmail.com")
+                .password("Qwerty1234!")
+                .build();
 
-        app.getHelperUser().openLoginRegostrationForm();
-        app.getHelperUser().fillRegistrationForm("locker@gmail.com","Qwerty1234!");
-        app.getHelperUser().submitLogin();
-
-        Assert.assertTrue(app.getHelperUser().isLogged());
-    }
-    @Test
-    public void loginSuccessModel(){
-        User user = new User().setEmail("locker@gmail.com").setPassword("Qwerty1234!");
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
+        logger.info("Assert check is Element button 'Signed out' present");
+
+    }
+    @Test
+    public void loginSuccessModel(){
+        logger.info("Test data --> email:'locker@gmail.com password:''Qwerty1234!'");
+        User user = User.builder()
+                .email("locker@gmail.com")
+                .password("Qwerty1234!")
+                .build();
+        app.getHelperUser().openLoginRegostrationForm();
+        app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().submitLogin();
+
+        Assert.assertTrue(app.getHelperUser().isLogged());
+        logger.info("Assert check is Element button 'Signed out' present");
     }
     @Test
     public void loginWrongEmail(){
+        logger.info("Test data --> email:'lockergmail.com password:''Qwerty1234!'");
+        User user = User.builder()
+                .email("lockergmail.com")
+                .password("Qwerty1234!")
+                .build();
         app.getHelperUser().openLoginRegostrationForm();
-        app.getHelperUser().fillRegistrationForm("lockergmail.com","Qwerty1234!");
+        app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
+        logger.info("Allert present with error text 'Wrong email or password'");
     }
     @Test
     public void loginWrongPassword(){
+        logger.info("Test data --> email:'locker@gmail.com password:''werty1234!'");
+        User user = User.builder()
+                .email("locker@gmail.com")
+                .password("werty1234!")
+                .build();
         app.getHelperUser().openLoginRegostrationForm();
-        app.getHelperUser().fillRegistrationForm("locker@gmail.com","werty1234!");
+        app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
+        logger.info("Allert present with error text 'Wrong email or password'");
     }
     @Test
     public void loginUnregisteredUser(){
+        logger.info("Test data --> email:'Mocker@gmail.com password:''Qwerty1234!'");
+        User user = User.builder()
+                .email("Mocker@gmail.com")
+                .password("Qwerty1234!")
+                .build();
         app.getHelperUser().openLoginRegostrationForm();
-        app.getHelperUser().fillRegistrationForm("Mocker@gmail.com","Qwerty1234!");
+        app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
+        logger.info("Allert present with error text 'Wrong email or password'");
     }
 }

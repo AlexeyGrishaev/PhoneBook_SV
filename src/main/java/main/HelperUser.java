@@ -5,6 +5,8 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -41,10 +43,19 @@ public class HelperUser extends HelperBase{
         click(By.xpath("//button[text()='Sign Out']"));
 
     }
-
+    public boolean isNoContactsHereDisplayed() {
+        WebDriverWait wait = new WebDriverWait(wd,5);
+        return   wait.until(ExpectedConditions
+                .textToBePresentInElement(wd.findElement(By.cssSelector(".contact-page_message__2qafk>h1")),"No Contacts here!"));
+    }
     public void submitRegistration() {
         click(By.xpath("//button[@name='registration']"));
     }
 
 
+    public void login(User user) {
+        openLoginRegostrationForm();
+        fillRegistrationForm(user);
+        submitLogin();
+    }
 }

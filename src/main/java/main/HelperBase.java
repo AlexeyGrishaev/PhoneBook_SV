@@ -20,6 +20,13 @@ public class HelperBase {
         this.wd = wd;
     }
 
+    public boolean isNoContactsHereDisplayed() {
+        WebDriverWait wait = new WebDriverWait(wd,5);
+        return   wait.until(ExpectedConditions
+                .textToBePresentInElement(wd.
+                        findElement(By.xpath("//*[@class='contact-page_message__2qafk']/h1")), "No Contacts here!"));
+    }
+
 
 
     public void click(By locator){

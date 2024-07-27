@@ -25,10 +25,16 @@ public class HelperUser extends HelperBase{
 //        loginTab.click();
         click(By.cssSelector("a[href='/login']"));
     }
+
+
     public void fillRegistrationForm(String email,String password){
         type(By.xpath("//*[@name='email']"),email);
         type(By.xpath("//*[@name='password']"),password);
     }
+//    public void fillRegistrationForm(User user){
+//        type(By.xpath("//*[@name='email']"), user.getEmail());
+//        type(By.xpath("//*[@name='la']"), user.getPassword());
+//    }
     public void fillRegistrationForm(User user){
         type(By.xpath("//*[@name='email']"), user.getEmail());
         type(By.xpath("//*[@name='password']"), user.getPassword());
@@ -43,11 +49,7 @@ public class HelperUser extends HelperBase{
         click(By.xpath("//button[text()='Sign Out']"));
 
     }
-    public boolean isNoContactsHereDisplayed() {
-        WebDriverWait wait = new WebDriverWait(wd,5);
-        return   wait.until(ExpectedConditions
-                .textToBePresentInElement(wd.findElement(By.cssSelector(".contact-page_message__2qafk>h1")),"No Contacts here!"));
-    }
+
     public void submitRegistration() {
         click(By.xpath("//button[@name='registration']"));
     }

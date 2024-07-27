@@ -4,8 +4,12 @@ import moodels.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
 public class RegistrationTests extends TestBase{
@@ -16,7 +20,9 @@ public class RegistrationTests extends TestBase{
         }
     }
 
-    @Test
+
+
+    @Test(dataProvider = "loginData")
     public void registrationSuccess(){
 
 //        Random random = new Random();
@@ -35,7 +41,7 @@ public class RegistrationTests extends TestBase{
 //        Random random = new Random();
 //        int i = random.nextInt(1000)+1000;
         int z = (int) (System.currentTimeMillis()/1000)%3600;
-        User user =   User.builder().email("locker"+z+"@gmail.com").password("Qwerty1234!").build();
+        User user =   new User().setEmail("locker"+z+"@gmail.com").setPassword("Qwerty1234!");
 
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
@@ -50,7 +56,7 @@ public class RegistrationTests extends TestBase{
 //        Random random = new Random();
 //        int i = random.nextInt(1000)+1000;
         int z = (int) (System.currentTimeMillis()/1000)%3600;
-        User user =   User.builder().email("locker"+z+"gmail.com").password("Qwerty123").build();
+        User user =   new User().setEmail("locker"+z+"gmail.com").setPassword("Qwerty123");
 
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
@@ -66,7 +72,7 @@ public class RegistrationTests extends TestBase{
 //        int i = random.nextInt(1000)+1000;
         int z = (int) (System.currentTimeMillis()/1000)%3600;
 
-        User user =   User.builder().email("locker"+z+"@gmail.com").password("Qwerty123").build();
+        User user =   new User().setEmail("locker"+z+"@gmail.com").setPassword("Qwerty123");
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitRegistration();

@@ -11,10 +11,9 @@ import java.util.List;
 public class RemoveContactTests extends  TestBase{
     @BeforeMethod
     public void preCondition(){
-        User user = User.builder()
-                .email("locker@gmail.com")
-                .password("Qwerty1234!")
-                .build();
+        User user = new User()
+                .setEmail("locker@gmail.com")
+                .setPassword("Qwerty1234!");
         if(!app.getHelperUser().isLogged()){
             app.getHelperUser().login(user);
 
@@ -22,12 +21,13 @@ public class RemoveContactTests extends  TestBase{
         app.getHelperContact().providerContacts();
     }
     @Test
-    public void removeFirstContact(){
+    public void removeOneContact(){
         Assert.assertEquals(app.getHelperContact().removeOneContact(),1);
     }
     @Test
-    public void removeAllContacts(){
+    public void removeAllcontacts(){
         app.getHelperContact().removeAllContacts();
-        Assert.assertTrue(app.getHelperUser().isNoContactsHereDisplayed());
+
+        Assert.assertTrue(app.getHelperContact().isNoContactsHereDisplayed());
     }
 }

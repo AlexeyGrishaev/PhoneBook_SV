@@ -1,9 +1,16 @@
 package test;
 
+import main.DataProviderUser;
 import moodels.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class LoginTests extends TestBase{
     @BeforeMethod
@@ -18,30 +25,27 @@ public class LoginTests extends TestBase{
 
 
 
-    @Test
-    public void loginSuccess(){
+    @Test(dataProvider = "loginData",dataProviderClass = DataProviderUser.class)
+    public void loginSuccess(String email,String passwor){
        // logger.info("Start loginSuccess");
         logger.info("Test data --> email:'locker@gmail.com password:''Qwerty1234!'");
-        User user = User.builder()
-                .email("locker@gmail.com")
-                .password("Qwerty1234!")
-                .build();
+        User user = new User()
+                .setEmail("locker@gmail.com")
+                .setPassword("Qwerty1234!");
+
 
         app.getHelperUser().openLoginRegostrationForm();
-        app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().fillRegistrationForm(email,passwor);
         app.getHelperUser().submitLogin();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
         logger.info("Assert check is Element button 'Signed out' present");
 
     }
-    @Test
-    public void loginSuccessModel(){
+    @Test(dataProvider = "loginModels",dataProviderClass = DataProviderUser.class)
+    public void loginSuccessModel(User user){
         logger.info("Test data --> email:'locker@gmail.com password:''Qwerty1234!'");
-        User user = User.builder()
-                .email("locker@gmail.com")
-                .password("Qwerty1234!")
-                .build();
+
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();
@@ -52,10 +56,10 @@ public class LoginTests extends TestBase{
     @Test
     public void loginWrongEmail(){
         logger.info("Test data --> email:'lockergmail.com password:''Qwerty1234!'");
-        User user = User.builder()
-                .email("lockergmail.com")
-                .password("Qwerty1234!")
-                .build();
+        User user = new User()
+                .setEmail("lockergmail.com")
+                .setPassword("Qwerty1234!");
+
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();
@@ -66,10 +70,10 @@ public class LoginTests extends TestBase{
     @Test
     public void loginWrongPassword(){
         logger.info("Test data --> email:'locker@gmail.com password:''werty1234!'");
-        User user = User.builder()
-                .email("locker@gmail.com")
-                .password("werty1234!")
-                .build();
+        User user = new User()
+                .setEmail("locker@gmail.com")
+                .setPassword("werty1234!");
+
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();
@@ -80,10 +84,10 @@ public class LoginTests extends TestBase{
     @Test
     public void loginUnregisteredUser(){
         logger.info("Test data --> email:'Mocker@gmail.com password:''Qwerty1234!'");
-        User user = User.builder()
-                .email("Mocker@gmail.com")
-                .password("Qwerty1234!")
-                .build();
+        User user = new User()
+                .setEmail("Mocker@gmail.com")
+                .setPassword("Qwerty1234!");
+
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().submitLogin();

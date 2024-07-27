@@ -22,11 +22,9 @@ public class RegistrationTests extends TestBase{
 
 
 
-    @Test(dataProvider = "loginData")
+    @Test
     public void registrationSuccess(){
 
-//        Random random = new Random();
-//        int i = random.nextInt(1000)+1000;
         int z = (int) (System.currentTimeMillis()/1000)%3600;
         app.getHelperUser().openLoginRegostrationForm();
         app.getHelperUser().fillRegistrationForm("locker"+z+"@gmail.com","Qwerty1234!");

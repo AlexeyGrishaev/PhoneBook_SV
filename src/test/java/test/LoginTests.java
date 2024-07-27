@@ -42,6 +42,19 @@ public class LoginTests extends TestBase{
         logger.info("Assert check is Element button 'Signed out' present");
 
     }
+    @Test(dataProvider = "loginFile",dataProviderClass = DataProviderUser.class)
+    public void loginSuccessFile(User user){
+        // logger.info("Start loginSuccess");
+        logger.info("Test data --> email:'locker@gmail.com password:''Qwerty1234!'");
+
+        app.getHelperUser().openLoginRegostrationForm();
+        app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().submitLogin();
+
+        Assert.assertTrue(app.getHelperUser().isLogged());
+        logger.info("Assert check is Element button 'Signed out' present");
+
+    }
     @Test(dataProvider = "loginModels",dataProviderClass = DataProviderUser.class)
     public void loginSuccessModel(User user){
         logger.info("Test data --> email:'locker@gmail.com password:''Qwerty1234!'");

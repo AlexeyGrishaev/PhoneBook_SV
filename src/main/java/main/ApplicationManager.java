@@ -17,7 +17,7 @@ public class ApplicationManager {
     HelperUser helperUser;
     HelperContact helperContact;
     EventFiringWebDriver wd;
-
+    //s
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
     String browser;

@@ -42,3 +42,8 @@ task qa(type:Test){
     }
 
 }
+task scoupe(type: Test){
+    useTestNG(){
+
+    }
+}

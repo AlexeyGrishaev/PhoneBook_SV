@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class RemoveContactTests extends  TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         User user = new User()
                 .setEmail("locker@gmail.com")
@@ -20,7 +20,7 @@ public class RemoveContactTests extends  TestBase{
         }
         app.getHelperContact().providerContacts();
     }
-    @Test
+    @Test(groups = "smoke")
     public void removeOneContact(){
         Assert.assertEquals(app.getHelperContact().removeOneContact(),1);
     }

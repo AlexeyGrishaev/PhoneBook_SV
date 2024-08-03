@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 
 public class AddNewContactTest extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         User user = new User()
                 .setEmail("locker@gmail.com")
@@ -24,7 +24,7 @@ public class AddNewContactTest extends TestBase{
     }
 
 
-    @Test
+    @Test (groups = {"smoke","regress","retest"})
     public void addNewContactSuccessAllFields(){
         int i = new Random().nextInt(1000)+1000;
         Contact contact = Contact.builder()

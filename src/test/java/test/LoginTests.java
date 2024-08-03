@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class LoginTests extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(app.getHelperUser().isLogged()){
             app.getHelperUser().logout();
@@ -66,7 +66,7 @@ public class LoginTests extends TestBase{
         Assert.assertTrue(app.getHelperUser().isLogged());
         logger.info("Assert check is Element button 'Signed out' present");
     }
-    @Test
+    @Test(groups = "smoke")
     public void loginWrongEmail(){
         logger.info("Test data --> email:'lockergmail.com password:''Qwerty1234!'");
         User user = new User()

@@ -1,0 +1,162 @@
+986   INFO  main.ApplicationManager  All tests run in Chrome Browser
+2251  INFO  main.ApplicationManager  The link--->https://telranedu.web.app/home
+2269  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[text()='Sign Out']
+7310  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[text()='Sign Out']
+7311  INFO  test.TestBase  Test data --> email:'lockergmail.com password:''Qwerty1234!'
+7311  INFO  main.ApplicationManager  ELEMENT FIND element=>By.cssSelector: a[href='/login']
+7327  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.cssSelector: a[href='/login']
+7331  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> css selector: a[href='/login']]
+7371  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> css selector: a[href='/login']]
+7372  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@name='email']
+7391  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@name='email']
+7392  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='email']]
+7425  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='email']]
+7559  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@name='password']
+7577  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@name='password']
+7577  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='password']]
+7610  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='password']]
+7739  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[@type='submit']
+7763  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[@type='submit']
+7763  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[@type='submit']]
+7793  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[@type='submit']]
+8846  INFO  test.TestBase  Allert present with error text 'Wrong email or password'
+8850  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[text()='Sign Out']
+13916  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[text()='Sign Out']
+13916  INFO  main.ApplicationManager  ELEMENT FIND element=>By.cssSelector: a[href='/login']
+13932  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.cssSelector: a[href='/login']
+13932  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> css selector: a[href='/login']]
+13968  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> css selector: a[href='/login']]
+13968  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@name='email']
+13979  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@name='email']
+13980  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='email']]
+14018  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='email']]
+14167  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@name='password']
+14180  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@name='password']
+14180  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='password']]
+14215  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='password']]
+14344  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[@type='submit']
+14366  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[@type='submit']
+14366  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[@type='submit']]
+14396  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[@type='submit']]
+14902  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //a[@href='/add']
+14924  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //a[@href='/add']
+14924  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //a[@href='/add']]
+14959  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //a[@href='/add']]
+14960  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //input[@placeholder='Name']
+14972  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //input[@placeholder='Name']
+14972  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Name']]
+15005  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Name']]
+15124  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //input[@placeholder='Last Name']
+15138  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //input[@placeholder='Last Name']
+15138  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Last Name']]
+15168  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Last Name']]
+15292  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //input[@placeholder='Phone']
+15310  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //input[@placeholder='Phone']
+15310  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Phone']]
+15341  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Phone']]
+15476  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //input[@placeholder='email']
+15496  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //input[@placeholder='email']
+15497  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='email']]
+15528  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='email']]
+15677  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //input[@placeholder='Address']
+15699  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //input[@placeholder='Address']
+15700  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Address']]
+15731  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='Address']]
+15851  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //input[@placeholder='description']
+15869  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //input[@placeholder='description']
+15869  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='description']]
+15901  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //input[@placeholder='description']]
+16284  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button/b[text()='Save']
+16303  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button/b[text()='Save']
+16303  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button/b[text()='Save']]
+16332  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button/b[text()='Save']]
+16332  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //h2
+16906  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //h2
+16916  INFO  main.ApplicationManager  TEXT from ELEMENTMAX
+16921  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16926  INFO  main.ApplicationManager  TEXT from ELEMENTMAX
+16931  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16936  INFO  main.ApplicationManager  TEXT from ELEMENTMAX
+16940  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16944  INFO  main.ApplicationManager  TEXT from ELEMENTMAX
+16950  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16955  INFO  main.ApplicationManager  TEXT from ELEMENTMax1485
+16961  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16967  INFO  main.ApplicationManager  TEXT from ELEMENTMax1955
+16971  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16975  INFO  main.ApplicationManager  TEXT from ELEMENTMax1735
+16981  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16986  INFO  main.ApplicationManager  TEXT from ELEMENTMax1599
+16991  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+16995  INFO  main.ApplicationManager  TEXT from ELEMENTMAX
+17001  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17005  INFO  main.ApplicationManager  TEXT from ELEMENTMAX
+17010  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17016  INFO  main.ApplicationManager  TEXT from ELEMENTMAX
+17021  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17025  INFO  main.ApplicationManager  TEXT from ELEMENTMax1215
+17031  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17031  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //h3
+17050  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //h3
+17055  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891074
+17061  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17066  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891618
+17071  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17076  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891846
+17081  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17087  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891248
+17092  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17097  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891485
+17102  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17106  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891955
+17111  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17115  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891735
+17121  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17126  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891599
+17131  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17136  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891831
+17141  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17146  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891430
+17150  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17155  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891156
+17159  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17165  INFO  main.ApplicationManager  TEXT from ELEMENT1234567891215
+17170  INFO  main.ApplicationManager  TEXT from ELEMENT GOT SUCCESSFUL
+17171  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[text()='Sign Out']
+17187  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[text()='Sign Out']
+17695  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@class='contact-item_card__2SOIM']
+17717  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@class='contact-item_card__2SOIM']
+18221  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@class='contact-item_card__2SOIM']
+18242  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@class='contact-item_card__2SOIM']
+18752  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //div[@class='contact-item_card__2SOIM']
+18774  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //div[@class='contact-item_card__2SOIM']
+18774  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //div[@class='contact-item_card__2SOIM']]
+18809  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //div[@class='contact-item_card__2SOIM']]
+19310  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[text()='Remove']
+19332  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[text()='Remove']
+19333  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[text()='Remove']]
+19360  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[text()='Remove']]
+20890  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@class='contact-item_card__2SOIM']
+20911  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@class='contact-item_card__2SOIM']
+20912  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[text()='Sign Out']
+20925  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[text()='Sign Out']
+20926  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[text()='Sign Out']
+20943  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[text()='Sign Out']
+20943  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[text()='Sign Out']]
+20978  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[text()='Sign Out']]
+20979  INFO  main.ApplicationManager  ELEMENT FIND element=>By.cssSelector: a[href='/login']
+20989  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.cssSelector: a[href='/login']
+20989  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> css selector: a[href='/login']]
+21019  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> css selector: a[href='/login']]
+21019  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@name='email']
+21035  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@name='email']
+21035  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='email']]
+21069  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='email']]
+21210  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //*[@name='password']
+21222  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //*[@name='password']
+21222  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='password']]
+21264  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //*[@name='password']]
+21411  INFO  main.ApplicationManager  ELEMENT FIND element=>By.xpath: //button[@name='registration']
+21429  INFO  main.ApplicationManager  ELEMENT FOUND success=>By.xpath: //button[@name='registration']
+21429  INFO  main.ApplicationManager  element to CLICK[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[@name='registration']]
+21457  INFO  main.ApplicationManager  element to CLICK DONE[[ChromeDriver: chrome on WINDOWS (3d1728cc5400f33399bd84bc75a1b33e)] -> xpath: //button[@name='registration']]

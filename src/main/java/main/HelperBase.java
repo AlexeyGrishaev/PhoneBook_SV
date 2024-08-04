@@ -68,7 +68,7 @@ public class HelperBase {
         }
         return false;
     }
-
+//s
     public void getScreen(String path) {
         TakesScreenshot takesScreenshot = (TakesScreenshot) wd;
         File tmp = takesScreenshot.getScreenshotAs(OutputType.FILE);

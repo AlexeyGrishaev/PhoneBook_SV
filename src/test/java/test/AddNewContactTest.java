@@ -38,7 +38,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenAllFields"+i+".png");
+        //  app.getHelperContact().getScreen("src/test/screenshots/screenAllFields"+i+".png");
         app.getHelperContact().addContact();
 
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
@@ -50,7 +50,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenAllFields"+i+".png");
+        // app.getHelperContact().getScreen("src/test/screenshots/screenAllFields"+i+".png");
         app.getHelperContact().addContact();
 
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
@@ -62,7 +62,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenReqFields"+i+".png");
+        //  app.getHelperContact().getScreen("src/test/screenshots/screenReqFields"+i+".png");
         app.getHelperContact().addContact();
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
@@ -83,7 +83,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenWrongName"+i+".png");
+        //  app.getHelperContact().getScreen("src/test/screenshots/screenWrongName"+i+".png");
         app.getHelperContact().addContact();
         Assert.assertTrue(app.getHelperContact().isAddPageStillDisplayed());
 
@@ -102,7 +102,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenLastName"+i+".png");
+        //   app.getHelperContact().getScreen("src/test/screenshots/screenLastName"+i+".png");
         app.getHelperContact().addContact();
         Assert.assertTrue(app.getHelperContact().isAddPageStillDisplayed());
 
@@ -113,7 +113,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenWrongPhone"+i+".png");
+        //  app.getHelperContact().getScreen("src/test/screenshots/screenWrongPhone"+i+".png");
         app.getHelperContact().addContact();
         Assert.assertTrue(app.getHelperContact().isAlertPresent(" Phone"));
 
@@ -132,7 +132,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenWrongEmail"+i+".png");
+        //  app.getHelperContact().getScreen("src/test/screenshots/screenWrongEmail"+i+".png");
         app.getHelperContact().addContact();
         Assert.assertTrue(app.getHelperContact().isAlertPresent("Email"));
 
@@ -151,7 +151,7 @@ public class AddNewContactTest extends TestBase{
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().createNewContact(contact);
-        app.getHelperContact().getScreen("src/test/screenshots/screenWrongAddress"+i+".png");
+        //  app.getHelperContact().getScreen("src/test/screenshots/screenWrongAddress"+i+".png");
         app.getHelperContact().addContact();
         Assert.assertTrue(app.getHelperContact().isAddPageStillDisplayed());
 
